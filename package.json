@@ -1,0 +1,71 @@
+{
+  "version": "0.0.1-alpha.68",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "lint:fix": "tsdx lint --fix",
+    "prepare": "tsdx build",
+    "storybook": "start-storybook -p 8005 --ci",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@lipihipi/ec-interviews",
+  "author": "Aman",
+  "module": "dist/user.esm.js",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@lipihipi/client-sdk": "^0.0.1-alpha.406",
+    "@lipihipi/ec-ui": "^0.0.1-beta.31",
+    "@lipihipi/form": "^0.0.1-gamma.102",
+    "@lipihipi/promotion": "0.0.1-alpha.56",
+    "@lipihipi/theme": "^0.0.1-beta.95",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-info": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "husky": "^4.2.5",
+    "react": "^16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "ts-loader": "^7.0.5",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@types/react-star-rating-component": "^1.4.0",
+    "@types/styled-components": "^5.1.4",
+    "@types/yup": "^0.29.3",
+    "moment": "^2.27.0",
+    "react-router-dom": "^5.2.0",
+    "react-star-rating-component": "^1.4.1",
+    "styled-components": "^5.2.0",
+    "sweetalert": "^2.1.2",
+    "yup": "^0.29.1"
+  }
+}
