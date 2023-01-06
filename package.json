@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1-alpha.68",
+  "version": "0.0.1-alpha.70",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -33,7 +33,7 @@
   "module": "dist/user.esm.js",
   "devDependencies": {
     "@babel/core": "^7.10.2",
-    "@lipihipi/client-sdk": "^0.0.1-alpha.406",
+    "@lipihipi/client-sdk": "^0.0.1-alpha.408",
     "@lipihipi/ec-ui": "^0.0.1-beta.31",
     "@lipihipi/form": "^0.0.1-gamma.102",
     "@lipihipi/promotion": "0.0.1-alpha.56",

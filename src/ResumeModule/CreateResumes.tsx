@@ -123,7 +123,7 @@ console.log(fileUrl)
         .then((res: any) => {
           switchTab(1);
           setInitialValues(res.data);
-          if (state === 'ProjectAssignmentRewards') {
+          if (state === 'ProjectAssignmentRewards' || state === 'personalInfo') {
             swal(successPayload);
             afterFinalSubmitSuccess(); 
             getResumeDownloadClick();
@@ -217,6 +217,8 @@ console.log(fileUrl)
                 // onPreview={onPreview}
                 onSubmit={onSubmit}
                 initialValues={initialValues}
+                onSubmitPreview = {(data: any) => onSubmit(data, true)}
+                onPreview={onPreview}
               />
             </Tab>
             <Tab id="educationalInfo" title="Educational Info">

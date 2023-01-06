@@ -18,7 +18,8 @@ const PersonalInfo = ({
   onSubmit,
   initialValues = {},
   onBack,
-  // onPreview,
+  onPreview,
+  onSubmitPreview
 }: any) => {
   if ('passport' in initialValues) {
     initialValues = { ...initialValues };
@@ -26,10 +27,17 @@ const PersonalInfo = ({
     if (initialValues.passport === false) initialValues.passport = '0';
   }
 
+  const [projects, setProjects] = React.useState({initialValues});
+
+  const onSubmitValue = (values: any) => {
+    setProjects(values);
+    onSubmit();
+  };
+
   return (
     <>
       <Form
-        onSubmit={onSubmit}
+        onSubmit={onSubmitValue}
         initialValues={initialValues}
         validationSchema={PersonalSchema}
       >
@@ -92,7 +100,7 @@ const PersonalInfo = ({
             </Col>
 
             <Col xs={12} sm={6}>
-              <Input placeholder="Enter here.." name="city" label="City" required/>
+              <Input placeholder="Enter here.." name="city" label="City" required />
             </Col>
 
             <Col xs={12} sm={6}>
@@ -189,7 +197,12 @@ const PersonalInfo = ({
           </Row>
         </div>
 
-        <Footer onBack={onBack}  />
+        <br />
+        <Footer
+          onBack={onBack}
+          onPersonalInfoPreview={onPreview}
+          onPersonalInfoSubmit={() => onSubmitPreview({ projects }, true)}
+        />
       </Form>
     </>
   );
