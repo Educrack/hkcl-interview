@@ -4,7 +4,9 @@ import { Button } from '@lipihipi/ec-ui';
 const Footer = ({
   onSubmit,
    onBack,
-   onPreview
+   onPreview,
+   onPersonalInfoPreview,
+   onPersonalInfoSubmit
    }: any) => {
   return (
     <div className="button-group justify-content-end mt-5">
@@ -13,6 +15,11 @@ const Footer = ({
         {onBack && (
           <Button type="button" onClick={onBack} shape="secondary">
             Back
+          </Button>
+        )}
+        {onPersonalInfoPreview && (
+          <Button type="submit" onClick={onPersonalInfoSubmit} shape="primary">
+            Save &amp; Preview
           </Button>
         )}
         {!onPreview && (
@@ -24,8 +31,7 @@ const Footer = ({
           <Button type="submit" onClick={onSubmit} shape="primary">
             Save &amp; Preview
           </Button>
-        )}
-        
+        )}      
       </div>
     </div>
   );

@@ -1363,10 +1363,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@lipihipi/client-sdk@^0.0.1-alpha.406":
-  version "0.0.1-alpha.510"
-  resolved "https://educrack-325342912897.d.codeartifact.ap-south-1.amazonaws.com:443/npm/educrack/@lipihipi/client-sdk/-/client-sdk-0.0.1-alpha.510.tgz#d2b32c469378075b52d97a8bacd54a44630cb000"
-  integrity sha512-1+p7dTz3AfrDUQupmmpHW6G9x7WP9KWiC+JmWOGiQ3r2y+gvxUZDQhDENYCofDs3JRc/npZ2hKD4bdE4py/27w==
+"@lipihipi/client-sdk@^0.0.1-alpha.408":
+  version "0.0.1-alpha.408"
+  resolved "https://educrack-325342912897.d.codeartifact.ap-south-1.amazonaws.com:443/npm/educrack/@lipihipi/client-sdk/-/client-sdk-0.0.1-alpha.408.tgz#6194ed47d3c0217405f5d7385a7b22f78c8ba088"
+  integrity sha512-iCHETthvxEtNBSDZaslSbjuQN9rIv2SsOOqddbz5rnilz05nwZPMja+g/NTZaZyVxJLR9MqTm8H3SpFEleIHlA==
   dependencies:
     axios "^0.19.2"
 
